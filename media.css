@@ -1,0 +1,81 @@
+@media (max-width: 1499px) {
+  .container {
+    max-width: 1200px;
+  }
+  header a {
+    display: none;
+  }
+  header a.active {
+    display: block;
+  }
+  
+  .navbar__line {
+    display: none;
+  }
+  .burger {
+    width: 40px;
+    height: 4px;
+    background: white;
+    position: relative;
+  }
+  .burger::before {
+    content: "";
+    width: 40px;
+    height: 4px;
+    background: white;
+    position: absolute;
+    top: -9px;
+  }
+  .burger::after {
+    content: "";
+    width: 40px;
+    height: 4px;
+    background: white;
+    position: absolute;
+    top: 9px;
+  }
+  .burger.active {
+    background: none;
+  }
+  .burger.active::after {
+    transform: rotate(45deg);
+    top: 0;
+    transition: 1s;
+  }
+  .burger.active::before {
+    transform: rotate(-45deg);
+    top: 0;
+    transition: 1s;
+  }
+  .hero__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .hero__right img{
+     width: 100%;
+  }
+  .about__left p {
+     width: 200px;
+  }
+  .about__right{
+    display: none;
+  }
+  .about__left button{
+    display: flex;
+    align-items: center;
+  }
+  .book{
+  position: relative;
+  right: 50px;
+
+  }
+  .book__input{
+    display: block;
+   width: 300px;
+  }
+  .form{
+    width: 500px;
+  }
+}

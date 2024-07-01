@@ -10,7 +10,7 @@
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -20,7 +20,7 @@ body {
 
 header {
     background: url('/img/BG.png')center/cover no-repeat;
-    padding-bottom: 85px;
+     padding-top: 32px;
 }
 
 .header__top {
@@ -28,7 +28,6 @@ header {
     align-items: center;
     justify-content: space-between;
     color: white;
-    margin-top: 32px;
 }
 
 .header__left {
@@ -45,7 +44,7 @@ header {
     cursor: pointer;
     color: #dcca87;
 }
-.header__right a:hover{
+.header__right h4:hover{
     cursor: pointer;
     color: #dcca87;
 }
@@ -53,8 +52,11 @@ header {
     color: white;
     font-family: "Cormorant Upright", sans-serif;
 }
-
-.header__right a {
+.header__right{
+    display: flex;
+    align-items: center;
+}
+.header__right h4 {
     color: white;
     padding-left: 50px;
     padding-right: 50px;
@@ -63,10 +65,120 @@ header {
     line-height: 175%;
     font-size: 16px;
     font-weight: 600;
+    display: flex;
 
 }
-.hero__top{
+ 
+.popup{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    backdrop-filter: blur(4px);
+    border: 1.5px solid white;
+    border-radius: 10px;
+    color: red;
+    background-color: #aaaaaa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: 100%;
+    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    width: 20%;
+    display: none;
+    z-index: 10;
+    height: 370px;
+}
+.popup h1{
+    font-size: 2em;
+    padding: 10px;
+    color: black;
+    letter-spacing: 5px;
+    margin-bottom: 60px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.title{
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    margin-bottom: 50px;
+}
+.put{
+    position: absolute;
+    top: -40px;
+    left: -50px;
+    width: 100%;
+    border: 2px solid black;
+    color: white;
+    outline: none;
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+.puts{
+    position: absolute;
+    top: 30px;
+    left: -50px;
+    width: 100%;
+    border: 2px solid black;
+    color: white;
+    outline: none;
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.2em;
+
+}
+
+
+.button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.2s;
+    color: black;
+    background-color: blue;
+    margin-top: 150px;
+}
+.login:hover{
+    background-color: rgb(213, 173, 173);
+    color: #FFFFFF;
+}
+.header__top{
+    position: relative;
+}
+.popup__close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.popup.active{
+    display: flex;
+}
+.hero{
+    background: url('/img/BG.png')center/cover no-repeat;
+    padding: 47px 0 85px;
+}
+.hero__top{ 
     transition: 1s;
+    
 }
  .hero__top:hover{
     transform: scale(1.1);
@@ -382,7 +494,7 @@ header {
     padding: 16px 0 13px;
 }
 
-.hours__right button {
+.hours__left button {
     background: #dcca87;
     color: black;
     padding: 10px 32px;

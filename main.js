@@ -10,12 +10,13 @@ var swiper = new Swiper(".gallery__swiper", {
     popup.classList.toggle('active')
   }
 
-  let a = document.querySelector('header a')
+  let ul = document.querySelector('header ul')
   let burger = document.querySelector('.burger')
 
   let showBurger = () =>{
-    a.classList.toggle('.active')
+    ul.classList.toggle('active')
     burger.classList.toggle('active')
   }
 
 
+ 

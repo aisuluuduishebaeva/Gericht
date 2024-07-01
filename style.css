@@ -24,11 +24,11 @@
   list-style: none;
   text-decoration: none;
   font-family: "Cormorant Upright", sans-serif;
-  font-family: "Open Sans", sans-serif;
 }
 .container {
-  max-width: 1600px;
+  max-width: 1500px;
   margin: 0 auto;
+  font-family: "Cormorant Upright", sans-serif;
 }
 body {
   background-color: #000000;
@@ -65,7 +65,7 @@ input {
   font-family: "Cormorant Upright", sans-serif;
 }
 
-.content__left a{
+.content__left li{
   font-weight: 400;
   font-size: 18px;
   line-height: 175%;
@@ -75,7 +75,11 @@ input {
   font-family: "Open Sans", sans-serif;
   cursor: pointer;
 }
-.content__right a {
+.content__right{
+  display: flex;
+  align-items: center;
+}
+.content__right h4 {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
   font-weight: 600;
   font-size: 16px;
@@ -88,10 +92,10 @@ input {
   font-family: "Open Sans", sans-serif;
   cursor: pointer;
 }
-.content__right a:hover{
+.content__right h4:hover{
   color: #dcca87;
 }
-.content__left a:hover {
+.content__left li:hover {
     color: #D4C17F;
   } 
 .navbar__line {
@@ -1179,10 +1183,10 @@ input {
   left: 50%;
   transform: translate(-50%,-50%);
   backdrop-filter: blur(4px);
-  border: 1.5px solid white;
+  border: 1.5px solid black;
   border-radius: 10px;
   color: rgb(138 61 230);
-  background: #aaaaaa;
+  background: #FFFFFF;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -1224,7 +1228,7 @@ input {
     left: 0;
     width: 100%;
     border: 2px solid black;
-    color: #fff;
+    color: black;
     outline: none;
     background: none;
     padding: 10px;
@@ -1248,6 +1252,7 @@ input {
 .title .put:valid{
     transform: translateX(-13px) translateY(-35px);
     font-size: 1em;
+    left: 20;
 }
 .buttons{
     display: flex;
@@ -1264,7 +1269,7 @@ input {
     cursor: pointer;
     transition: 0.2s;
     color: black;
-    background-color: blue;
+    background-color: yellow;
 }
 
 .sumbit:hover{
